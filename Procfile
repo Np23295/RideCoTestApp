@@ -1,1 +1,1 @@
-web: gunicorn rideco-test-app.wsgi
+web: gunicorn RideCoTestApp.wsgi
