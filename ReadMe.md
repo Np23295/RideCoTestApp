@@ -5,7 +5,7 @@ ReadMe
 2. Setup Django
     * Check if django is already installed  `python3 -m django --version`
     *  Executing the project `python3 manage.py runserver`. For running on specific port `python manage.py runserver 8080` or `python manage.py runserver 0:8000` 
-
+3. Setup MYSQL or Postgres and configure the database defaults in settings.py file.
 
 ### Making Migration
 ```
@@ -73,3 +73,23 @@ There are lot of limitations in the app.
 4. As the UI is Django Templates, needs to customize media queries for Mobile responsiveness, but still it will not perform similar to native.
 5. For the purpose of scaling, it currently does not have REST API which limits the scalability.
 6. All of the sub applications can be individually configured for behaving as micro-service. Which will help out to scale from monolith.
+7. No Test has been written yet.
+8. Currently just deployed, need to configure for security purpose
+
+### Deployed URL
+https://rideco-test-app.herokuapp.com/admin/
+
+Super User:
+* username - admin
+* password - ridecoadmin
+
+User 1:
+* username - user_1
+* password - ridecouser@1
+
+User 2:
+* username - user_2
+* password - ridecouser@2
+
+For the Deployment process i am using postgresql and on local i am using Mysql
+
