@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'RideCoTestApp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'd7sed0dk5fpt8q',
         'USER': 'zzijywmkiodced',
         'PASSWORD': 'e914ad87567a7df5270838911c0d52f012f3e7296f0c9a1df2cbb06ce3ce371f',
