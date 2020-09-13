@@ -10,8 +10,8 @@ class MapsForm(forms.ModelForm):
         widgets = {
             'point': forms.OSMWidget(
                 attrs={
-                    'map_width': 1500,
-                    'map_height': 720,
+                    'map_width': 1920,
+                    'map_height': 1080,
                     'template_name': 'gis/openlayers-osm.html',
                     'default_lat': 43.452969,
                     'default_lon': -80.495064,
