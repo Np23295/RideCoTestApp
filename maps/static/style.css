@@ -1,0 +1,49 @@
+#id_point_div_map {
+     position: relative;
+     vertical-align: top;
+     float: left;
+}
+#label {
+     position: fixed;
+    width: 100%;
+    left: 5%;
+    top: 2%;
+}
+#shared_with {
+     position: fixed;
+     background-color: #FFFFFF;
+     right: 2%;
+     bottom: 5%;
+    border-radius: 15px;
+}
+#id_label {
+     width: 40%;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-align: center;
+}
+#id_shared_with {
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+#id_point_map {
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+#submit {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    min-width: 10%;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 16px;
+    background-color: seagreen;
+}
