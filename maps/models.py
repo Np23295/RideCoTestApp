@@ -9,7 +9,7 @@ from sharedmaps.models import SharedMaps
 
 class Maps(models.Model):
     label = models.CharField(default="My Location", null=False, max_length=25)
-    point = models.PointField()
+    point = models.PointField(null=False, blank=False)
     created_by = models.ForeignKey(User, editable=False, null=True, blank=True, on_delete=models.CASCADE, )
     shared_with = models.ManyToManyField(User, related_name="shared_with", editable=True)
 

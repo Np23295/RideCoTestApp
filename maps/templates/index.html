@@ -1,32 +1,15 @@
 
 {{ form.media }}
-<form enctype="multipart/form-data" method="post" action="">
+<form enctype="multipart/form-data" method="post" action="{% url "addmap" %}" >
             {% csrf_token %}
                 {{ form.point }}
     <div id="label">{{ form.label }}</div>
     <div id="shared_with">
-        <h5 style="text-align: center; border-bottom: 1px solid #979797; padding: 0; margin: 8">Share With</h5>
+        <h5 style="text-align: center; border-bottom: 1px solid #979797; padding: 0; margin: 8px">Share With</h5>
         {{ form.shared_with }}
     </div>
             <input id="submit" type="submit" value="Submit"/>
         </form>
-{#{% if maps_list %}#}
-{#    <ul>#}
-{#    {% for maps in maps_list %}#}
-{#        <li>{{ maps.label }}</li>#}
-{#        <li>{{ maps.point }}</li>#}
-{#    {% endfor %}#}
-{#    </ul>#}
-{#{% else %}#}
-{#    {{ form.point }}#}
-{#    <div id="label">{{ form.label }}</div>#}
-{#    <div id="shared_with">#}
-{#        <h5 style="text-align: center; border-bottom: 1px solid #979797; padding: 0; margin: 8">Share With</h5>#}
-{#        {{ form.shared_with }}#}
-{#    </div>#}
-{#    {{ form.as_p }}#}
-{##}
-{#{% endif %}#}
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
