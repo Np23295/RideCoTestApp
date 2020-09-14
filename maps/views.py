@@ -38,4 +38,4 @@ def addmap(request):
         print(res)
     else:
         print("Other method called")
-    return index(request)
+    return render(request, 'mapAdded.html')
