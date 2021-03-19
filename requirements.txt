@@ -1,4 +1,4 @@
-Django==2.2.12
+Django==2.2.18
 django-cors-headers==3.3.0
 Werkzeug==1.0.1
 gunicorn==20.0.4
